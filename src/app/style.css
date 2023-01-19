@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --font-color: #Dadaea;
+    --font-color-hover: #555;
+    --background-color: #252525; 
+    --container-background-color: #333;
+}
+
+.light {
+    --font-color: #252525;
+    --font-color-hover: #999;
+    --background-color: #Dadaea; 
+    --container-background-color: #e1e1e1;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+}
+
+header ion-icon {
+    position: absolute;
+    padding: 5px 10px;
+    color: var(--font-color);
+    font-size: 22px;
+    cursor: pointer;
+    right: 4rem;
+    border: 1px solid var(--font-color);
+    border-radius: 100px;
+}
+
+.light #sunny {
+    display: none;
+}
+
+.light #moon{
+    display: block;
+}
+
+#moon {
+    display: none;
+}
+
+.container {
+    display: block;
+    margin: 5% auto;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all .5s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--container-background-color);
+    transform: scale(1.02);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
+}
+
+.container img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+}
+
+.container h1 {
+    color: var(--font-color);
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container p {
+    color: var(--font-color-hover);
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 1rem;
+    transition: .5s;
+}
+
+.container:hover p {
+    color: var(--container-background-color);
+}
