@@ -11,6 +11,7 @@
     --font-color-hover: #555;
     --background-color: #252525; 
     --container-background-color: #333;
+    --social-button-background-hover: #555;
 }
 
 .light {
@@ -18,6 +19,7 @@
     --font-color-hover: #999;
     --background-color: #Dadaea; 
     --container-background-color: #e1e1e1;
+    --social-button-background-hover: rgba(0, 0, 0, .1);
 }
 
 body {
@@ -25,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: .5s;
+    align-items: center;
 }
 
 header{
@@ -55,14 +58,15 @@ header ion-icon {
     display: none;
 }
 
-.container {
+.container, .open{
     display: block;
+    position: relative;
     margin: 5% auto;
     padding: 3rem;
     text-align: center;
     border-radius: 10px;
     background-color: transparent;
-    transition: all .5s;
+    transition: .3s;
     border: 1px solid transparent;
     cursor: pointer;
 }
@@ -74,7 +78,7 @@ header ion-icon {
     box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
 }
 
-.container img {
+.container img, .open img {
     width: 13rem;
     height: 13rem;
     object-fit: cover;
@@ -82,7 +86,7 @@ header ion-icon {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
 }
 
-.container h1 {
+.container h1, .open h1 {
     color: var(--font-color);
     margin-top: 20px;
     font-size: 1.3rem;
@@ -99,5 +103,83 @@ header ion-icon {
 }
 
 .container:hover p {
-    color: var(--container-background-color);
+    opacity: 0;
+}
+
+.open {
+    position: absolute;
+    background-color: var(--container-background-color);
+    transform: scale(1.02);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
+    cursor:initial;
+    margin-top: 104px;
+}
+
+.open span {
+    color: var(--font-color);
+    display: block;
+    position: absolute;
+    font-size: 32px;
+    left: 30px;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 0 15px;
+    transition: all .2s;
+}
+
+.open span:hover {
+    background-color: var(--social-button-background-hover);
+}
+
+.open .btn {
+    color: var(--font-color);
+    background-color: transparent;
+    margin: 30px;
+    font-size: 1rem;
+    padding: 15px 25px;
+    border-radius: 100px;
+    width: 160px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.open .btn:hover {
+    transform: translateY(-5px);
+    font-weight: 500;
+}
+
+.open .btn:nth-child(1) {
+    border: 1px solid #F50620;
+}
+
+.open .btn:nth-child(2) {
+    border: 1px solid #009432;
+}
+
+.open .btn:nth-child(3) {
+    border: 1px solid #2980B9;
+}
+
+.open .socials .icons {
+    font-size: 2.5rem;
+    color: var(--font-color);
+    display: flex;
+}
+
+.open .socials button {
+    border-radius: 999px;
+    margin: 0 10px;
+    background-color: var(--container-background-color);
+    padding: 8px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.open .socials button:hover {
+    background-color: var(--social-button-background-hover);
+    transform: translateY(-5px);
 }

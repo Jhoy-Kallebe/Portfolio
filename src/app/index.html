@@ -11,13 +11,29 @@
 </head>
 <body>
     <header>
-        <ion-icon onclick="toggle()" id="sunny" name="sunny"></ion-icon>
-        <ion-icon onclick="toggle()" id="moon" name="moon"></ion-icon>
+        <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
+        <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
     </header>
-    <div class="container">
+    <div onclick="openContainer()" class="container">
         <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
         <h1>Jhoy Kallebe Carvalho Fernandes</h1>
         <p>Hover-me</p>
+    </div>
+
+    <div class="open">
+        <span onclick="closeContainer()" class="back">&lt;</span>
+        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
+        <h1>Jhoy Kallebe Carvalho Fernandes</h1>
+        <div>
+            <button class="btn">Sobre Mim</button>
+            <button class="btn">Habilidades</button>
+            <button class="btn">Projetos</button>
+        </div>
+        <div class="socials">
+            <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
+            <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
+            <button><ion-icon class="icons" name="logo-github"></ion-icon></button>
+        </div>
     </div>
 
 
