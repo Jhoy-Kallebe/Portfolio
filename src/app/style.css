@@ -69,6 +69,7 @@ header ion-icon {
     transition: .3s;
     border: 1px solid transparent;
     cursor: pointer;
+    margin-bottom: calc(100vh - 500px);
 }
 
 .container:hover {
@@ -113,7 +114,7 @@ header ion-icon {
     border-top: 1px solid rgba(255, 255, 255, .2);
     box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
     cursor:initial;
-    margin-top: 104px;
+    display: none;
 }
 
 .open span {
@@ -151,15 +152,15 @@ header ion-icon {
 }
 
 .open .btn:nth-child(1) {
-    border: 1px solid #F50620;
+    border: 3px solid #F50620;
 }
 
 .open .btn:nth-child(2) {
-    border: 1px solid #009432;
+    border: 3px solid #009432;
 }
 
 .open .btn:nth-child(3) {
-    border: 1px solid #2980B9;
+    border: 3px solid #2980B9;
 }
 
 .open .socials .icons {
