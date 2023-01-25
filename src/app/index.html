@@ -14,31 +14,26 @@
         <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
         <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
     </header>
-    <div onclick="openContainer()" class="container">
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-        <h1>Jhoy Kallebe Carvalho Fernandes</h1>
-        <p>Hover-me</p>
-    </div>
-
-    <div class="open">
-        <span onclick="closeContainer()" class="back">&lt;</span>
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-        <h1>Jhoy Kallebe Carvalho Fernandes</h1>
-        <div>
-            <button class="btn">Sobre Mim</button>
-            <button class="btn">Habilidades</button>
-            <button class="btn">Projetos</button>
+    <main>
+        <div class="bolck">
+            <div onclick="openContainer()" class="container ">
+                <span onclick="closeContainer()" class="back">&lt;</span>
+                <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
+                <h1>Jhoy Kallebe Carvalho Fernandes</h1>
+                <p>Hover-me</p>
+                <div >
+                    <button class="buttons btn">Sobre Mim</button>
+                    <button class="buttons btn">Habilidades</button>
+                    <button class="buttons btn">Projetos</button>
+                </div>
+                <div class="socials">
+                    <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
+                    <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
+                    <button><ion-icon class="icons" name="logo-github"></ion-icon></button>
+                </div>
+            </div>    
         </div>
-        <div class="socials">
-            <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
-            <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
-            <button><ion-icon class="icons" name="logo-github"></ion-icon></button>
-        </div>
-    </div>
-
-    <div>
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-    </div>
+    </main>
 
     <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

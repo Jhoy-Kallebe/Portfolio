@@ -58,10 +58,17 @@ header ion-icon {
     display: none;
 }
 
-.container, .open{
+.block .open {
+    z-index: 1000;
+    border: 1px solid;
+    transform: scale(2);
+    background-color: #009432;
+}
+
+.container {
     display: block;
     position: relative;
-    margin: 5% auto;
+    margin: auto;
     padding: 3rem;
     text-align: center;
     border-radius: 10px;
@@ -69,7 +76,6 @@ header ion-icon {
     transition: .3s;
     border: 1px solid transparent;
     cursor: pointer;
-    margin-bottom: calc(100vh - 500px);
 }
 
 .container:hover {
@@ -79,7 +85,11 @@ header ion-icon {
     box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
 }
 
-.container img, .open img {
+.container span {
+    display: none;
+}
+
+.container img {
     width: 13rem;
     height: 13rem;
     object-fit: cover;
@@ -87,7 +97,7 @@ header ion-icon {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
 }
 
-.container h1, .open h1 {
+.container h1 {
     color: var(--font-color);
     margin-top: 20px;
     font-size: 1.3rem;
@@ -107,14 +117,19 @@ header ion-icon {
     opacity: 0;
 }
 
+.container .buttons {
+    display: none;
+}
+
+.container .socials {
+    display: none;
+}
+
 .open {
-    position: absolute;
     background-color: var(--container-background-color);
     transform: scale(1.02);
     border-top: 1px solid rgba(255, 255, 255, .2);
     box-shadow: 0 20px 15px rgba(0, 0, 0, .2);
-    cursor:initial;
-    display: none;
 }
 
 .open span {
@@ -132,6 +147,10 @@ header ion-icon {
 
 .open span:hover {
     background-color: var(--social-button-background-hover);
+}
+
+.open p {
+    opacity: 0;
 }
 
 .open .btn {
@@ -153,14 +172,24 @@ header ion-icon {
 
 .open .btn:nth-child(1) {
     border: 3px solid #F50620;
+    display: initial;
+    animation: visibilityButtons 1s;
 }
 
 .open .btn:nth-child(2) {
     border: 3px solid #009432;
+    display: initial;
+    animation: visibilityButtons 2s;
 }
 
 .open .btn:nth-child(3) {
     border: 3px solid #2980B9;
+    display: initial;
+    animation: visibilityButtons 3s;
+}
+
+.open .socials {
+    display: initial;
 }
 
 .open .socials .icons {
@@ -183,4 +212,13 @@ header ion-icon {
 .open .socials button:hover {
     background-color: var(--social-button-background-hover);
     transform: translateY(-5px);
+}
+
+@keyframes visibilityButtons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -4,12 +4,7 @@ function changeTheme(){
 }
 
 function openContainer(){
-    let container = document.querySelector('.open');
-    container.style.display = "initial";
-}
-
-function closeContainer(){
-    let container = document.querySelector('.open');
-    container.style.display = "none";
+    let container = document.querySelector('.container');
+    container.classList.toggle('open')
 }
 
