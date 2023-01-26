@@ -11,34 +11,53 @@
 </head>
 <body>
     <header>
-        <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
-        <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
+        <div class="button-theme">
+            <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
+            <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a> </li>|
+                <li><a href="#abaut">Sobre Mim</a></li>|
+                <li><a href="#skills">Habilidades</a> </li>|
+                <li><a href="#projects">Projetos</a> </li>
+            </ul>
+        </nav>
     </header>
-    <div onclick="openContainer()" class="container">
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-        <h1>Jhoy Kallebe Carvalho Fernandes</h1>
-        <p>Hover-me</p>
-    </div>
-
-    <div class="open">
-        <span onclick="closeContainer()" class="back">&lt;</span>
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-        <h1>Jhoy Kallebe Carvalho Fernandes</h1>
-        <div>
-            <button class="btn">Sobre Mim</button>
-            <button class="btn">Habilidades</button>
-            <button class="btn">Projetos</button>
-        </div>
-        <div class="socials">
-            <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
-            <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
-            <button><ion-icon class="icons" name="logo-github"></ion-icon></button>
-        </div>
-    </div>
-
-    <div>
-        <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
-    </div>
+    <main>
+        <section id="perfil" class="perfil">
+            <div onclick="openContainer()" class="container">
+                <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
+                <h1>Jhoy Kallebe Carvalho Fernandes</h1>
+                <p>Hover-me</p>
+            </div>
+        
+            <div class="open">
+                <span onclick="closeContainer()" class="back">&lt;</span>
+                <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
+                <h1>Jhoy Kallebe Carvalho Fernandes</h1>
+                <div>
+                    <button class="btn"><a href="#abaut">Sobre Mim</a></button>
+                    <button class="btn"><a href="#skills">Habilidades</a></button>
+                    <button class="btn"><a href="#projects">Projetos</a></button>
+                </div>
+                <div class="socials">
+                    <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
+                    <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
+                    <button><ion-icon class="icons" name="logo-github"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        <section id="abaut" class="abaut">
+            sobre mim
+        </section>
+        <section id="skills" class="skills">
+            Habilidades
+        </section>
+        <section id="projects" class="projects">
+            Projetos
+        </section>
+    </main>
 
     <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

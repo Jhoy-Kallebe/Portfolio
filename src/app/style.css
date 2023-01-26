@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 :root {
@@ -22,17 +24,29 @@
     --social-button-background-hover: rgba(0, 0, 0, .1);
 }
 
+html {
+    scroll-behavior: smooth;
+    color: var(--font-color);
+}
+
 body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     transition: .5s;
     align-items: center;
+    position: relative;
 }
 
 header{
-    padding: 30px;
+    padding: 20px;
+    width: 100%;
     display: flex;
+    z-index: 1000;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--container-background-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
 }
 
 header ion-icon {
@@ -41,9 +55,52 @@ header ion-icon {
     color: var(--font-color);
     font-size: 22px;
     cursor: pointer;
-    right: 4rem;
+    left: 4rem;
     border: 1px solid var(--font-color);
     border-radius: 100px;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+li a {
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+li:nth-child(2) a {
+    color: #F50620;
+}
+
+li:nth-child(3) a {
+    color: #009432;
+}
+
+li:nth-child(4) a {
+    color: #2980B9;
+}
+
+li a:hover {
+    background: var(--font-color-hover);
+    color: var(--font-color);
+}
+
+li:nth-child(2) a:hover{
+    background: rgba(245, 6, 32, .5);
+}
+
+li:nth-child(3) a:hover{
+    background: rgba(0, 148, 50, .5);
+}
+
+li:nth-child(4) a:hover{
+    background: rgba(41, 128, 185, .5);
 }
 
 .light #sunny {
@@ -58,18 +115,21 @@ header ion-icon {
     display: none;
 }
 
-.container, .open{
-    display: block;
-    position: relative;
-    margin: 5% auto;
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh + 80px);
+}
+
+.container, .open {
+    margin: 0 auto;
     padding: 3rem;
     text-align: center;
     border-radius: 10px;
-    background-color: transparent;
     transition: .3s;
     border: 1px solid transparent;
     cursor: pointer;
-    margin-bottom: calc(100vh - 500px);
 }
 
 .container:hover {

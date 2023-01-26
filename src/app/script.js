@@ -5,7 +5,7 @@ function changeTheme(){
 
 function openContainer(){
     let container = document.querySelector('.open');
-    container.style.display = "initial";
+    container.style.display = "block";
 }
 
 function closeContainer(){
