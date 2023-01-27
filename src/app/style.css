@@ -38,6 +38,10 @@ body {
     position: relative;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header{
     padding: 20px;
     width: 100%;
@@ -223,13 +227,13 @@ section {
     border: 3px solid #2980B9;
 }
 
-.open .socials .icons {
+.socials .icons {
     font-size: 2.5rem;
     color: var(--font-color);
     display: flex;
 }
 
-.open .socials button {
+.socials button {
     border-radius: 999px;
     margin: 0 10px;
     background-color: var(--container-background-color);
@@ -240,7 +244,35 @@ section {
     transition: .2s;
 }
 
-.open .socials button:hover {
+.socials button:hover {
     background-color: var(--social-button-background-hover);
     transform: translateY(-5px);
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    justify-content: right;
+}
+
+footer .socials .icons{
+    font-size: 1.5rem;
+}
+
+footer .socials button {
+    padding: 8px;
+}
+
+@keyframes popUp-ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

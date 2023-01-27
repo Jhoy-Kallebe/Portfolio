@@ -5,7 +5,8 @@ function changeTheme(){
 
 function openContainer(){
     let container = document.querySelector('.open');
-    container.style.display = "block";
+    container.style.display = "initial";
+    container.style.animation = "popUp-ani ease 1s";
 }
 
 function closeContainer(){
