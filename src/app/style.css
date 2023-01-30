@@ -70,6 +70,16 @@ header{
     left: 0rem;
 }
 
+header .menu-navegation .icon {
+    position: absolute;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    right: 2.5rem;
+    opacity: 0;
+    z-index: -1;
+}
+
 header nav li {
     display: inline-block;
     margin: 5px 10px;
@@ -263,6 +273,13 @@ footer {
     background: rgba(0, 0, 0, .1);
     width: 100%;
     justify-content: right;
+    align-items: center;
+}
+
+footer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .socials .icons{
@@ -270,6 +287,7 @@ footer .socials .icons{
 }
 
 footer .socials button {
+    margin-top: 0;
     padding: 8px;
 }
 
@@ -292,4 +310,60 @@ footer .socials button {
     100% {
         opacity: 1;
     }
+}
+
+@media (max-width: 1079px){
+    .open {
+        display: block;
+        border-radius: 0;
+    }
+
+    .open span {
+        display: none;
+    }
+
+    .open .btn {
+        margin: 30px 30px 0 30px;
+    }
+
+    .socials button {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 934px) {
+    .open {
+        margin-top: 130px
+    }
+}
+
+@media (max-width: 631px){
+    .button-theme {
+        z-index: 100;
+    }
+    .open {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header .menu-navegation .icon{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 542px) {
+    .open {
+        padding-top: 130px;
+        height: calc(100vh + 140px);
+    }
+
 }
