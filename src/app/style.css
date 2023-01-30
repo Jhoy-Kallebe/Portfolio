@@ -53,7 +53,7 @@ header{
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
 }
 
-header ion-icon {
+.button-theme ion-icon {
     position: absolute;
     padding: 5px 10px;
     color: var(--font-color);
@@ -62,6 +62,12 @@ header ion-icon {
     left: 4rem;
     border: 1px solid var(--font-color);
     border-radius: 100px;
+}
+
+.out {
+    position: absolute;
+    top: 20px;
+    left: 0rem;
 }
 
 header nav li {
@@ -123,7 +129,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh + 80px);
+    height: calc(100vh + 10px);
 }
 
 .container, .open {
@@ -215,15 +221,15 @@ section {
     font-weight: 500;
 }
 
-.open .btn:nth-child(1) {
+.open a:nth-child(1) .btn{
     border: 3px solid #F50620;
 }
 
-.open .btn:nth-child(2) {
+.open a:nth-child(2) .btn{
     border: 3px solid #009432;
 }
 
-.open .btn:nth-child(3) {
+.open a:nth-child(3) .btn{
     border: 3px solid #2980B9;
 }
 
@@ -265,6 +271,17 @@ footer .socials .icons{
 
 footer .socials button {
     padding: 8px;
+}
+
+.to-down-header, .to-down-footer{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-down-header.active, .to-down-footer.active {
+    opacity: 1;
+    pointer-events: initial;
 }
 
 @keyframes popUp-ani {

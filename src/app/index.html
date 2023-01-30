@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../assets/book.svg" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="to-down-header">
         <div class="button-theme">
             <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
             <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
@@ -26,6 +26,10 @@
     </header>
     <main>
         <section id="perfil" class="perfil">
+            <div class="button-theme out">
+                <ion-icon onclick="changeTheme()" id="sunny" name="sunny"></ion-icon>
+                <ion-icon onclick="changeTheme()" id="moon" name="moon"></ion-icon>
+            </div>
             <div onclick="openContainer()" class="container">
                 <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
                 <h1>Jhoy Kallebe Carvalho Fernandes</h1>
@@ -37,9 +41,9 @@
                 <img src="../assets/IMG_20220116_152923_774.jpg" alt="">
                 <h1>Jhoy Kallebe Carvalho Fernandes</h1>
                 <div>
-                    <button class="btn"><a href="#abaut">Sobre Mim</a></button>
-                    <button class="btn"><a href="#skills">Habilidades</a></button>
-                    <button class="btn"><a href="#projects">Projetos</a></button>
+                    <a href="#abaut"><button class="btn">Sobre Mim</button></a>
+                    <a href="#skills"><button class="btn">Habilidades</button></a>
+                    <a href="#projects"><button class="btn">Projetos</button></a>
                 </div>
                 <div class="socials">
                     <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
@@ -58,7 +62,7 @@
             Projetos
         </section>
     </main>
-    <footer>
+    <footer class="to-down-footer">
         <div class="socials">
             <button><ion-icon class="icons" name="logo-instagram"></ion-icon></button>
             <button><ion-icon class="icons" name="logo-linkedin"></ion-icon></button>
