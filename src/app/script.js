@@ -14,6 +14,11 @@ function closeContainer(){
     container.style.display = "none";
 }
 
+function showMenu(){
+    let menu = document.querySelector('.to-down-header');
+    menu.classList.toggle('show');
+}
+
 const toDownHeader = document.querySelector('.to-down-header');
 const toDownFooter = document.querySelector('.to-down-footer');
 

@@ -80,6 +80,10 @@ header .menu-navegation .icon {
     z-index: -1;
 }
 
+header nav ul {
+    display: block;
+}
+
 header nav li {
     display: inline-block;
     margin: 5px 10px;
@@ -351,13 +355,36 @@ footer .socials button {
         height: 80px;
     }
 
-    header ul {
-        display: none;
-    }
-
     header .menu-navegation .icon{
         opacity: 1;
     }
+    nav ul {
+        margin-top: 60px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        background-color: var(--container-background-color);
+        left: -100%;
+        transition: all .3s;
+    }
+
+    .show nav ul {
+        left: 0%;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    nav li:nth-child(1) {
+        padding-top: 80px;
+    }
+
 }
 
 @media (max-width: 542px) {
