@@ -146,10 +146,17 @@ li:nth-child(4) a:hover{
 }
 
 section {
+    width: 100vw;
+    height: 100vh;
+    margin: 50px 0;
+}
+
+section:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh + 10px);
+    margin-top: 0;
+    height: 100vh;
 }
 
 /*###################  PERFIL  ######################*/
@@ -279,14 +286,27 @@ section {
 
 /*###################  ABAUT ME  ######################*/
 
+section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*###################  SKILLS  ######################*/
+
+section:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*###################  PROJECTS  ######################*/
 
 .projects {
-    margin: 0 auto;
-    width: 100%;
+    width: 100%; 
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .projects .container-projects {
@@ -294,6 +314,10 @@ section {
     position: absolute;
     display: flex;
     justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    padding-bottom: 100px;
 }
 
 .projects .container-projects .project {
@@ -318,7 +342,7 @@ section {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.projects .container-projects .project figure:hover:after {
+.projects .container-projects .project figure::after{
     content: "";
     width: 100%;
     height: 75%;
@@ -326,6 +350,34 @@ section {
     top: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.projects .container-projects .project .redirect {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.projects .container-projects .project .redirect .icon {
+    font-size: 35px;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    color: #Dadaea;
+    opacity: 0;
+}
+
+.projects .container-projects .project .redirect .icon:hover {
+    background-color: #333;
+}
+
+.projects .container-projects .project:hover figure::after, .projects .container-projects .project:hover .redirect .icon {
+    opacity: 1;
 }
 
 .projects .container-projects .project .img-project {
