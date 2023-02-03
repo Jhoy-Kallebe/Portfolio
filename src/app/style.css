@@ -379,8 +379,6 @@ section:nth-child(1) {
     height: 6.5rem;
     width: 6.5rem;
     transition: .2s;
-    background-color: #252525;
-    color: #Dadaea;
     border-radius: 8px;
 }
 
