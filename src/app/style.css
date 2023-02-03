@@ -349,10 +349,42 @@ section:nth-child(1) {
 
 /*###################  SKILLS  ######################*/
 
-section:nth-child(3) {
+.skills {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+}
+
+.skills h1 {
+    margin-top: 130px;
+}
+
+.skills .container-skills {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 40px;
+    height: 100%;
+    margin-bottom: 80px;
+}
+
+.skills .container-skills .img {
+    height: 6.5rem;
+    width: 6.5rem;
+    transition: .2s;
+}
+
+.skills .container-skills .img:hover {
+    transform: translateY(-15px) scale(1.3);
+    margin: 15px;
+}
+
+.skills .container-skills img {
+    padding: 6px;
+    border-radius: 8px;
 }
 
 /*###################  PROJECTS  ######################*/
@@ -527,10 +559,18 @@ footer .socials button {
     }
 }
 
+@media (max-width: 940) {
+    
+} 
+
 @media (max-width: 934px) {
     .open {
         margin-top: 130px
     }
+}
+
+@media (max-width: 870) {
+    
 }
 
 @media (max-width: 631px){
