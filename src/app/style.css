@@ -497,7 +497,7 @@ section:nth-child(1) {
 .contact {
     width: 100%;
     padding-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
 }
 
@@ -516,10 +516,39 @@ section:nth-child(1) {
 .contact .contact-area input {
     height: 30px;
     padding: 17px 20px;
+    font-size: 1rem;
     background: none;
     outline: none;
     border: none;
     border-bottom: 1px solid;
+}
+
+.contact .contact-area textarea {
+    border: 1px solid;
+    outline: none;
+    resize: none;
+    background: none;
+    padding: 17px 20px;
+}
+
+.contact .contact-area .btn {
+    border: none;
+    padding: 15px;
+    height: auto;
+    width: 25%;
+    min-width: 150px;
+    margin: auto;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #2980B9, #F50620);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.contact .contact-area .btn:hover {
+    width: 30%;
+    color: var(--background-color);
 }
 
 /*###################  FOOTER AND ANIMATIONS  ######################*/
@@ -529,6 +558,7 @@ footer {
     position: fixed;
     bottom: 0;
     padding: 10px 25px;
+    backdrop-filter: blur(2px);
     background: rgba(0, 0, 0, .1);
     width: 100%;
     justify-content: right;
