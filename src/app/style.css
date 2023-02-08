@@ -492,6 +492,10 @@ section:nth-child(1) {
     padding: 10px 20px; 
 }
 
+.projects .container-projects .project .description-project p {
+    text-align: center;
+}
+
 /*###################  CONTACT  ######################*/
 
 .contact {
