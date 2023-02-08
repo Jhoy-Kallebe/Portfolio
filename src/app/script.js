@@ -19,6 +19,11 @@ function showMenu(){
     menu.classList.toggle('show');
 }
 
+function flipCard(classCard) {
+    let card = document.querySelector(classCard);
+    card.classList.toggle('active');
+}
+
 const toDownHeader = document.querySelector('.to-down-header');
 const toDownFooter = document.querySelector('.to-down-footer');
 
