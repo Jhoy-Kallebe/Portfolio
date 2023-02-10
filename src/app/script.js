@@ -15,7 +15,7 @@ function closeContainer(){
 }
 
 function showMessage(){
-    alert('Em desenvolvimento');
+    alert('Opção em desenvolvimento');
 }
 
 function showMenu(){

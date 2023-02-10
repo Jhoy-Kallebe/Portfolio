@@ -529,6 +529,7 @@ section:nth-child(1) {
     transition: .3s ease-in-out;
     color: #Dadaea;
     opacity: 0;
+    cursor: pointer;
 }
 
 .projects .container-projects .project .redirect .icon:hover {
