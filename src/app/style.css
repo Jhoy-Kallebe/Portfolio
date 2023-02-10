@@ -51,7 +51,7 @@ main {
 }
 
 header{
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     display: flex;
     z-index: 1000;
@@ -62,12 +62,11 @@ header{
 }
 
 .button-theme ion-icon {
-    position: absolute;
     padding: 5px 10px;
+    margin-left: 2.5rem;
     color: var(--font-color);
     font-size: 22px;
     cursor: pointer;
-    left: 4rem;
     border: 1px solid var(--font-color);
     border-radius: 100px;
 }
@@ -76,6 +75,10 @@ header{
     position: absolute;
     top: 20px;
     left: 0rem;
+}
+
+header .menu-navegation {
+    padding-right: 1.67rem;
 }
 
 header .menu-navegation .icon {
@@ -689,13 +692,34 @@ section:nth-child(1) {
     color: var(--background-color);
 }
 
+
+.contact .feed-back {
+    background-color: var(--font-color);
+    padding: 10px 20px;
+    margin: 30px auto;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    display: none;
+}
+
+.contact .feed-back:hover {
+    background-color: var(--button-hover);
+}
+
+.contact .feed-back a {
+    color: var(--background-color);
+    letter-spacing: 1px;
+}
+
 /*###################  FOOTER AND ANIMATIONS  ######################*/
 
 footer {
     display: flex;
     position: fixed;
     bottom: 0;
-    padding: 10px 25px;
+    padding: 10px 2.5rem;
     backdrop-filter: blur(2px);
     background: rgba(0, 0, 0, .1);
     width: 100%;
@@ -706,7 +730,6 @@ footer {
 footer .feed-back {
     background-color: var(--font-color);
     padding: 10px 20px;
-    margin-left: 8px;
     cursor: pointer;
     transition: all .3s;
     border-radius: 5px;
@@ -851,6 +874,18 @@ footer .socials button {
     .open {
         padding-top: 130px;
         height: calc(100vh + 140px);
+    }
+
+    .contact .feed-back {
+        display: initial;
+    }
+
+    footer .feed-back {
+        display: none;
+    }
+
+    footer {
+        justify-content: right;
     }
 
 }
