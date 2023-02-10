@@ -39,5 +39,4 @@ window.addEventListener("scroll", () => {
       toDownHeader.classList.remove("active");
       toDownFooter.classList.remove("active");
     }
-})
-
+});
