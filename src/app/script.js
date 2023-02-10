@@ -14,6 +14,10 @@ function closeContainer(){
     container.style.display = "none";
 }
 
+function showMessage(){
+    alert('Em desenvolvimento');
+}
+
 function showMenu(){
     let menu = document.querySelector('.to-down-header');
     menu.classList.toggle('show');

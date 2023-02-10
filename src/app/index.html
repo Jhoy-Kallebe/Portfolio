@@ -62,7 +62,7 @@
                 <div class="description-me">
                     <p>Olá! Meu nome é Jhoy Kallebe Carvalho Fernandes, sou desenvolvedor front-end e possuo algumas habilidades básicas de  back-end. Descobri minha paixão pela progamação durante o ensino médio e a partir disso decidi fazer da minha paixão a minha profissão. Sempre busco por novos desafios e adoro resolver problemas. Um rapaz de alta proatividade e de grande habilidade de comunicação.</p>
                     <div class="iteration-area">
-                        <a href="#">Download CV</a>
+                        <a onclick="showMessage()">Download CV</a>
                         <a href="#contact">Contato</a>
                     </div>
                 </div>
@@ -162,9 +162,9 @@
         </section>
         <section id="contact" class="contact">
             <h1>Contato</h1>
-            <form class="contact-area" action="">
+            <form class="contact-area" target="_blank" action="https://formsubmit.co/jhoykallebecontato@gmail.com" method="POST">
                 <input type="text" name="nome" id="nome" placeholder="Nome*">
-                <input type="email" name="email" id="email" placeholder="Emai*">
+                <input type="email" name="email" id="email" placeholder="Email*">
                 <input type="text" name="assunto" id="assunto" placeholder="Assunto">
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem*"></textarea>
                 <input class="btn" type="submit" name="submit" id="submit" value="Enviar">
