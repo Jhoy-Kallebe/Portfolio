@@ -14,6 +14,7 @@
     --background-color: #252525; 
     --container-background-color: #333;
     --social-button-background-hover: #555;
+    --button-hover: #bdbdbd;
 }
 
 .light {
@@ -22,6 +23,7 @@
     --background-color: #Dadaea; 
     --container-background-color: #e1e1e1;
     --social-button-background-hover: rgba(0, 0, 0, .1);
+    --button-hover: #3f3f3f;
 }
 
 html {
@@ -697,8 +699,26 @@ footer {
     backdrop-filter: blur(2px);
     background: rgba(0, 0, 0, .1);
     width: 100%;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
+}
+
+footer .feed-back {
+    background-color: var(--font-color);
+    padding: 10px 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+footer .feed-back:hover {
+    background-color: var(--button-hover);
+}
+
+footer .feed-back a {
+    color: var(--background-color);
+    letter-spacing: 1px;
 }
 
 footer .socials {
