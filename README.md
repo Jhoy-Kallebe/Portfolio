@@ -8,10 +8,10 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Jhoy-Kallebe/Portfolio?style=for-the-badge)
 
 <p align="center">
-  <img src="play-game.png" width="600px;" alt="imagem tela inicial">
+  <img src="perfilPortfolio.png" width="600px;" alt="imagem tela inicial">
 </p><br>
 <p align="center">
-  <img src="game-win.png" width="600px;" alt="imagem tela projetos">
+  <img src="projetosPortfolio.png" width="600px;" alt="imagem tela projetos">
 </p>
 
 > Projeto desenvolvido com intuito de aprimorar minhas habilidades com a linguagem JavaScript.
@@ -48,4 +48,4 @@ MIT
 
 ## Acesse <a href="https://jhoy-kallebe.github.io/Portfolio/src/app/">AQUI!</a>
 
-[⬆ Voltar ao topo](#meu-portfolio)<br>
+[⬆ Voltar ao topo](#meu-portfólio)<br>
