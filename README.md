@@ -14,7 +14,7 @@
   <img src="projetosPortfolio.png" width="600px;" alt="imagem tela projetos">
 </p>
 
-> Projeto desenvolvido com intuito de aprimorar minhas habilidades com a linguagem JavaScript.
+> Projeto desenvolvido com intuito de compartilhar meu perfil dentro da sociedade dev, além de aprimorar meus conhecimentos no front-end.
 ### Ajustes e melhorias
 Projeto em desenvolvimento:
 - [x] Front-end
